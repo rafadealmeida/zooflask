@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <title>Zoo</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form method="POST" action="/novoanimal">
+            <p class="h2">Adicione o animal</p>
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form2Example1">Nome Popular</label>
+                <input id="form2Example1" name="nome_popular" class="form-control" />
+            </div>
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form2Example2">Nome cientifico</label>
+                <input id="form2Example2" name="nome_cientifico" class="form-control" />
+            </div>
+            <div data-mdb-input-init class="form-outline mb-4">
+                <label class="form-label" for="form2Example2">Habitos noturnos</label>
+                <input id="form2Example2" name="habitos_noturnos" class="form-control" />
+            </div>
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                class="btn btn-primary btn-block mb-4">Adicionar animal</button>
+
+        </form>
+    </div>
+</body>
+
+</html>

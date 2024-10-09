@@ -1,0 +1,22 @@
+:root {
+  --primary: #176EE0;
+  --secondary: #3C5F8B;
+  --secondary-dark: #316AB6;
+  --gray:#3A4B61
+  --black:#2A2F36;
+  --white: #ffffff;
+}
+
+.header{
+  background-color: var(--primary);
+  height: 5vh;
+  }
+
+.footer{
+  background-color: var(--secondary-dark);
+  height: 5vh;
+}
+
+.main{
+height: 90vh;
+}

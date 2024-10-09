@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <!-- <th>ID</th> -->
+                    <th>texto</th>
+                    <th>polaridade</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for avalia in avaliacoes %}
+                <tr>
+                    <td>{{ avalia.texto }}</td>
+                    <td>{{ avalia.polaridade }}</td>
+
+                    <td><a href="#">alterar</a></td>
+                    <td><a href="">remover</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+
+    </div>
+</body>
+
+</html>
