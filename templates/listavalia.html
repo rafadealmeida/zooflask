@@ -9,7 +9,28 @@
 </head>
 
 <body>
+    <table class="table">
+        <thead>
+            <tr>
+                <!-- <th>ID</th> -->
+                <th>texto</th>
+                <th>polaridade</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for avalia in avaliacoes %}
+            <tr>
+                <td>{{ avalia.texto }}</td>
+                <td>{{ avalia.polaridade }}</td>
 
+                <td><a href="#">alterar</a></td>
+                <td><a href="">remover</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
     <div class="container mt-5">
         <table class="table table-bordered table-striped">

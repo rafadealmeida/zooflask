@@ -44,9 +44,11 @@ Base = automap_base(metadata=metadata)
 """
 Base.prepare()
 
-Animal = Base.classes.animal
-Avaliacao =Base.classes.avaliacao 
+# Ligando com a classe
+Animal =  Base.classes.animal
+Avaliacao = Base.classes.avaliacao
 
+# Criar a sessão do SQLAlchemy
 Session = sessionmaker(bind=engine)
 
 

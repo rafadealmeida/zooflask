@@ -10,4 +10,12 @@ create table animal(
 );
 
 
+create table avaliacao(
+  id int primary key auto_increment,
+  texto LONGTEXT NOT NULL,
+  polaridade LONGTEXT NOT NULL
+);
+
+
 select * from animal;
+select * from avaliacao;
